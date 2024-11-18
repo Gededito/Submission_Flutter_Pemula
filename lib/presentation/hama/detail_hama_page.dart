@@ -5,19 +5,13 @@ import 'package:grapegrow_submission/core/constants/spaces.dart';
 import 'package:grapegrow_submission/core/constants/theme.dart';
 import 'package:grapegrow_submission/data/model/hama_model.dart';
 
-class DetailHamaPage extends StatefulWidget {
+class DetailHamaPage extends StatelessWidget {
   final HamaModel data;
 
   const DetailHamaPage({
     super.key,
     required this.data,
   });
-
-  @override
-  State<DetailHamaPage> createState() => _DetailHamaPageState();
-}
-
-class _DetailHamaPageState extends State<DetailHamaPage> {
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +41,7 @@ class _DetailHamaPageState extends State<DetailHamaPage> {
                   Radius.circular(12.0),
                 ),
                 child: Image.asset(
-                  widget.data.image,
+                  data.image,
                   width: context.deviceWidth,
                   height: 300,
                   fit: BoxFit.cover,
@@ -55,7 +49,7 @@ class _DetailHamaPageState extends State<DetailHamaPage> {
               ),
               const SpaceHeight(12),
               Text(
-                widget.data.name,
+                data.name,
                 style: fontPlusJakartSans.copyWith(
                   fontSize: sizeMedium,
                   fontWeight: semiBold,
@@ -71,7 +65,7 @@ class _DetailHamaPageState extends State<DetailHamaPage> {
               ),
               const SpaceHeight(4),
               Text(
-                widget.data.gejala,
+                data.gejala,
                 style: fontPlusJakartSans,
               ),
               const SpaceHeight(8),
@@ -84,7 +78,7 @@ class _DetailHamaPageState extends State<DetailHamaPage> {
               ),
               const SpaceHeight(4),
               Text(
-                widget.data.solusi,
+                data.solusi,
                 style: fontPlusJakartSans,
               ),
             ],

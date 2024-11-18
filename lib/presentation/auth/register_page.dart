@@ -142,7 +142,7 @@ class RegisterPage extends StatelessWidget {
                         },
                         label: regis.isLoading ? 'Loading' : 'Daftar',
                       );
-                    }),
+                    },),
                     const SpaceHeight(12),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,

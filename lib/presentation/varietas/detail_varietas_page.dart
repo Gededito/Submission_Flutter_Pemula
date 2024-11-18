@@ -5,19 +5,13 @@ import 'package:grapegrow_submission/core/constants/spaces.dart';
 import 'package:grapegrow_submission/core/constants/theme.dart';
 import 'package:grapegrow_submission/data/model/varietas_model.dart';
 
-class DetailVarietasPage extends StatefulWidget {
+class DetailVarietasPage extends StatelessWidget {
   final VarietasModel data;
 
   const DetailVarietasPage({
     super.key,
     required this.data,
   });
-
-  @override
-  State<DetailVarietasPage> createState() => _DetailVarietasPageState();
-}
-
-class _DetailVarietasPageState extends State<DetailVarietasPage> {
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +41,7 @@ class _DetailVarietasPageState extends State<DetailVarietasPage> {
                   Radius.circular(12.0),
                 ),
                 child: Image.asset(
-                  widget.data.image,
+                  data.image,
                   width: context.deviceWidth,
                   height: 300,
                   fit: BoxFit.cover,
@@ -55,7 +49,7 @@ class _DetailVarietasPageState extends State<DetailVarietasPage> {
               ),
               const SpaceHeight(12),
               Text(
-                widget.data.name,
+                data.name,
                 style: fontPlusJakartSans.copyWith(
                   fontSize: sizeMedium,
                   fontWeight: semiBold,
@@ -71,7 +65,7 @@ class _DetailVarietasPageState extends State<DetailVarietasPage> {
               ),
               const SpaceHeight(4),
               Text(
-                widget.data.description,
+                data.description,
                 style: fontPlusJakartSans,
               ),
             ],

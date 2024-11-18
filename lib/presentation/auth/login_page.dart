@@ -91,7 +91,7 @@ class LoginPage extends StatelessWidget {
                         },
                         label: login.isLoading ? 'Loading' : 'Masuk',
                       );
-                    }),
+                    },),
                     const SpaceHeight(12),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,

@@ -55,4 +55,11 @@ class EditProfileProvider extends ChangeNotifier {
       }
     }
   }
+
+  @override
+  void dispose() {
+    nameController.dispose();
+    addressController.dispose();
+    super.dispose();
+  }
 }
