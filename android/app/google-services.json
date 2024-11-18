@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "954449241874",
+    "project_id": "grapegrow-subsmission-pemula",
+    "storage_bucket": "grapegrow-subsmission-pemula.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:954449241874:android:b86ce5d1c1df990d02b5cb",
+        "android_client_info": {
+          "package_name": "com.example.grapegrow_submi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsaBBLCepdOM8bR21q8FJr-butZn-cZTA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:954449241874:android:893fc095593af5c602b5cb",
+        "android_client_info": {
+          "package_name": "com.example.grapegrow_submission"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsaBBLCepdOM8bR21q8FJr-butZn-cZTA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
