@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:grapegrow_submission/core/constants/colors.dart';
 import 'package:grapegrow_submission/core/constants/spaces.dart';
 import 'package:grapegrow_submission/core/constants/theme.dart';
 

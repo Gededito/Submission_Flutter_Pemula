@@ -1,7 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:grapegrow_submission/main.dart';
-import 'package:grapegrow_submission/presentation/home/home_page.dart';
 
 class LoginProvider extends ChangeNotifier {
   bool obscureText = true;
@@ -51,15 +50,10 @@ class LoginProvider extends ChangeNotifier {
 
   // Login Firebase Auth & Firestore
   Future<void> authenticateLogin(BuildContext context) async {
-    UserCredential userCredential;
     isLoading = true;
     notifyListeners();
 
     try {
-      userCredential = await firebaseAuth.signInWithEmailAndPassword(
-        email: emailController.text,
-        password: passController.text,
-      );
 
       if (context.mounted) {
         Navigator.push(
